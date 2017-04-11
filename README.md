@@ -20,7 +20,7 @@ the edges of the image:
 ## Optimzation problem
 GIRAF is designed to solve following the optimization problem:
 
-_||Ax-b||<sup>2</sup>+&lambda;||T(x)||<sup>p</sup><sub>S<sub>p</sub></sub>nbsp;nbsp;nbsp;nbsp;(OPT)
+_||Ax-b||<sup>2</sup>+&lambda;||T(x)||<sup>p</sup><sub>S<sub>p</sub></sub>_ &nbsp;&nbsp;&nbsp;&nbsp;(OPT)
 
 where _x_ is a mutli-dimensional array of data (typically in Fourier domain), 
 _A_ is a linear measurement operator, _b_ is the measured data, 
