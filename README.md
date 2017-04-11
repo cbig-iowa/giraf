@@ -39,8 +39,8 @@ GIRAF is also used in the following paper:
 > [3] Balachandrasekaran, A., Ongie, G., Jacob, M. Accelerated dynamic MRI using structured low rank matrix completion. InImage Processing (ICIP), 2016 IEEE International Conference on 2016 Sep 25 (pp. 1858-1862). IEEE. 
 
 ## Code Details
-A standalone implementation of the algorithm is available in `giraf.m`
-Demo illustrating GIRAF for undersampled MRI reconstruction are provided in
+A standalone implementation of the algorithm is available in `giraf.m`.
+Demos illustrating GIRAF for undersampled MRI reconstruction are provided in:
   * `giraf_demo1.m` - recovery of noiseless undersampled data
   * `giraf_demo2.m` - recovery of noisy & undersampled data
   * `giraf_demo3.m` - effect of filter size on recon quality
