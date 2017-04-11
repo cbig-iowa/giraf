@@ -20,13 +20,13 @@ the edges of the image:
 ## Optimzation problem
 GIRAF is designed to solve following the optimization problem:
 
-_||Ax-b||<sup>2</sup>+&lambda;||T(x)||<sup>p</sup><sub>S<sub>p</sub></sub>_ &nbsp;&nbsp;&nbsp;&nbsp;(OPT)
+> ||Ax-b||<sup>2</sup>+&lambda;||T(x)||<sup>p</sup><sub>S<sub>p</sub></sub> &nbsp;&nbsp;&nbsp;&nbsp;(OPT)
 
 where _x_ is a mutli-dimensional array of data (typically in Fourier domain), 
 _A_ is a linear measurement operator, _b_ is the measured data, 
 _T_ is a matrix lifting operator that maps the data _x_ to a Toeplitz-like
-matrix, _||.||<sub>S<sub>p</sub></sub>_ is the Schatten-p quasi-norm, and _&lambda;_
-is a regularization parameter.
+matrix, _||.||<sub>S<sub>p</sub></sub>_ is the [Schatten-p quasi-norm](https://en.wikipedia.org/wiki/Schatten_norm) (0 <= p <= 1), and _&lambda;_
+is a regularization parameter. 
 
 ## References
 GIRAF was introduced in the conference paper:
@@ -38,12 +38,12 @@ A full-length journal version of this work is available as a pre-print:
 GIRAF is also used in the following paper:
 > [3] Balachandrasekaran, A., Ongie, G., Jacob, M. Accelerated dynamic MRI using structured low rank matrix completion. InImage Processing (ICIP), 2016 IEEE International Conference on 2016 Sep 25 (pp. 1858-1862). IEEE.
 
-## Code Example
+## Code Details
 A standalone implementation of the algorithm is available in `giraf.m`
 Demo illustrating GIRAF for undersampled MRI reconstruction are provided in
-  *`giraf_demo1.m` - recovery of noiseless undersampled data
-  *`giraf_demo2.m` - recovery of noisy & undersampled data
-  *`giraf_demo3.m` - effect of filter size on recon quality
+  * `giraf_demo1.m` - recovery of noiseless undersampled data
+  * `giraf_demo2.m` - recovery of noisy & undersampled data
+  * `giraf_demo3.m` - effect of filter size on recon quality
 
 ## Reproducible Research
 Code to reproduce the experiments reported in the paper [2] is provided in the subfolder `reproduce`
